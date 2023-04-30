@@ -5,6 +5,6 @@ fun main() {
     val one = "человеку"
     val many = "людям"
 
-    val ending = if (likes % 10 == 1) one else many
+    val ending = if (likes % 10 == 1 && likes % 100 != 11) one else many
     println("Понравилось $likes $ending")
 }
